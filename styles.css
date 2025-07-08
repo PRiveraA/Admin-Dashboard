@@ -12,6 +12,7 @@
 
 body {
   height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Dashboard */
@@ -20,8 +21,8 @@ body {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(24rem, 1fr) 3fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 24rem 3fr;
+  grid-template-rows: 1fr 4.5fr;
 }
 
 ul {
@@ -45,7 +46,6 @@ h1>svg {
 }
 
 .sidebar {
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 2.7rem;
@@ -91,3 +91,80 @@ li>svg {
 }
 
 /* Top Section */
+
+.top {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 3rem;
+  padding-right: 5rem;
+  width: 100%;
+}
+
+.first-half {
+  border-bottom: solid black 2px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.first-half .icon {
+  background-color: rgb(255, 202, 66);
+  padding: 1.7rem;
+  border-radius: 4rem;
+}
+
+.first-half svg {
+  width: 2rem;
+}
+
+.first-half form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: minmax(5rem, 45rem);
+  margin-right: 2rem;
+  flex: 1 1 auto;
+  max-width: 45rem;
+}
+
+.first-half>form input {
+  height: 2.3rem;
+  width: 100%;
+  min-width: 4rem;
+  border-radius: 2rem;
+  background-color: rgb(224, 232, 239);
+  border: none;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 1rem;
+
+}
+
+.first-half button {
+  all: unset;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  font: inherit;
+  /* inherit font from parent */
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 16rem;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.second-half {
+  border-bottom: solid black 2px;
+  display: flex;
+  align-items: center;
+}
