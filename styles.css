@@ -229,4 +229,28 @@ li>svg {
 
 .main {
   background-color: transparent;
+  display: grid;
+  grid-template-columns: 1fr 20rem;
+  grid-template-rows: 1fr 18fr;
+  column-gap: 1.8rem;
+  margin-left: 1.7rem;
+  margin-right: 2rem;
+  row-gap: .9rem;
+}
+
+.main>.left {
+  background-color: rgb(124, 124, 124);
+}
+
+.main>.right {
+  background-color: rgb(124, 124, 124);
+}
+
+
+/* This needs to be re-done so that there are three main items in the grid, the Projects section, the announcements section, and the Trending section */
+.main>.top-left,
+.main>.top-right {
+  display: flex;
+  align-items: end;
+  font-size: 1.5rem;
 }
