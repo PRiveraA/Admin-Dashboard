@@ -13,6 +13,7 @@
 body {
   height: 100vh;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 
 /* Dashboard */
@@ -230,27 +231,70 @@ li>svg {
 .main {
   background-color: transparent;
   display: grid;
-  grid-template-columns: 1fr 20rem;
-  grid-template-rows: 1fr 18fr;
-  column-gap: 1.8rem;
-  margin-left: 1.7rem;
-  margin-right: 2rem;
-  row-gap: .9rem;
+  grid-template-columns: 1fr 24rem;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
 }
 
-.main>.left {
-  background-color: rgb(124, 124, 124);
+.projects {
+  grid-row: 1/3;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1rem repeat(3, 17rem);
 }
 
-.main>.right {
-  background-color: rgb(124, 124, 124);
+.projects>h1 {
+  font-weight: 500;
+  grid-column: 1/3;
+  align-self: start;
+  margin-top: .4rem;
 }
 
+.card {
+  background-color: white;
+  border-radius: 0.7rem;
+  display: grid;
+  grid-template-columns: 0.6rem 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  min-height: 14rem;
+}
 
-/* This needs to be re-done so that there are three main items in the grid, the Projects section, the announcements section, and the Trending section */
-.main>.top-left,
-.main>.top-right {
+.card>.margin {
+  background-color: orange;
+  grid-row: 1/4;
+}
+
+.card>.wrapper {
+  display: grid;
+  align-items: center;
+  padding: 1rem
+}
+
+.card svg {
+  width: 1.9rem;
+  fill: rgb(44, 44, 44);
+}
+
+.wrapper>h1 {
+  align-self: end;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.wrapper>p {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(82, 82, 82);
+}
+
+.wrapper>.symbols {
   display: flex;
-  align-items: end;
-  font-size: 1.5rem;
+  width: 100%;
+  justify-content: end;
+  gap: 2rem;
 }
+
+/* Announcements */
