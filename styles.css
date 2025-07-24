@@ -96,7 +96,7 @@ li>svg {
 
 .dashboard>.top {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 6rem 7rem;
   padding-left: 3rem;
   padding-right: 5rem;
   width: 100%;
@@ -110,6 +110,7 @@ li>svg {
   width: 100%;
   justify-content: space-between;
   padding-right: 2rem;
+  align-items: ;
 }
 
 .first-half .icon {
@@ -231,7 +232,7 @@ li>svg {
 .main {
   background-color: transparent;
   display: grid;
-  grid-template-columns: 1fr 24rem;
+  grid-template-columns: 1fr 22rem;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
   margin: 2rem;
@@ -298,3 +299,51 @@ li>svg {
 }
 
 /* Announcements */
+.announcements {
+  display: grid;
+  grid-template-rows: 1rem 1fr;
+  gap: 2rem;
+}
+
+.announcements>h1 {
+  font-weight: 500;
+  align-self: start;
+  margin-top: .4rem;
+  grid-row: 1/2;
+
+}
+
+.announcements>.card>.middle {
+  border-bottom: 1px rgb(218, 218, 218) solid;
+  border-top: 1px rgb(218, 218, 218) solid;
+  align-self: stretch;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.announcements>.card h1 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.announcements>.card p {
+  font-size: .85rem;
+  color: rgb(82, 82, 82);
+}
+
+.announcements>.card .content {
+  display: grid;
+  gap: 2px;
+}
+
+.announcements>.card {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: .85fr;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.7rem;
+}
+
+/* Trending */
